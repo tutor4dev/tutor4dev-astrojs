@@ -1,0 +1,15 @@
+---
+import Layout from '@/components/Layout.astro'
+import { tags } from '@/lib/content-collection.mjs'
+---
+
+<Layout title="Tags">
+  <aside>
+    <p class="menu-label">บทความ</p>
+    <ul class="menu-list">
+      {
+        tags.map(tag => <li><a href={`/blogs/tags/${tag}`}>{tag}</a></li>)
+      }
+    </ul>
+  </aside>
+</Layout>

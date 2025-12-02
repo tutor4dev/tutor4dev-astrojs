@@ -1,0 +1,33 @@
+---
+import { getEntry, render } from 'astro:content'
+import { courses } from '@/lib/content-collection.mjs'
+
+import Layout from '@/components/Layout.astro'
+import Seo from '@/components/Seo.astro'
+
+export async function getStaticPaths() {
+  return courses.map(({ id }) => ({
+    params: { id }
+  }))
+}
+
+const { id } = Astro.params
+const course = await getEntry('courseCollection', id)
+const { data: frontMatter } = course
+
+if (!course) {
+  return new Response(null, {
+    status: 404,
+    statusText: 'Not Found',
+  })
+}
+
+const { Content  } = await render(course)
+---
+
+<Layout>
+  <Seo slot="seo" {...frontMatter} />
+  <div class="content-page">
+    <Content />
+  </div>
+</Layout>

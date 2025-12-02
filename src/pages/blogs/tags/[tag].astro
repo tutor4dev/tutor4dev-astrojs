@@ -1,0 +1,24 @@
+---
+import Layout from '@/components/Layout.astro'
+import BlogCard from '@/components/BlogCard.astro'
+import { tagBlogs } from '@/lib/content-collection.mjs'
+
+export async function getStaticPaths() {
+  return Object.keys(tagBlogs).map(tag => ({
+    params: { tag }
+  }))
+}
+
+const {tag} = Astro.params
+const title = `Tags: ${tag}`
+---
+
+<Layout title={title}>
+  <h1 class="title is-1">บทความ: {tag}</h1>
+
+  <div class="columns is-multiline">
+    {
+      tagBlogs[tag].map(({ id, data: frontMatter}, idx) => <BlogCard {idx} {id} {...frontMatter} />)
+    }
+  </div>
+</Layout>

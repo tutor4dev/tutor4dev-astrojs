@@ -1,0 +1,26 @@
+---
+
+---
+
+<div class="g-ytsubscribe" data-channel="tutor4dev" data-layout="full" data-count="default"></div>
+
+<style scoped>
+.g-ytsubscribe {
+  margin-top: 1.5rem
+}
+</style>
+
+<script>
+function initYoutube() {
+  const script = document.createElement('script')
+  script.src = 'https://apis.google.com/js/platform.js'
+  script.type = 'text/javascript'
+  script.async = true
+
+  document.head.appendChild(script)
+}
+
+initYoutube()
+
+document.addEventListener('astro:after-swap', initYoutube)
+</script>

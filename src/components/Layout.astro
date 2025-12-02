@@ -1,0 +1,143 @@
+---
+import { ClientRouter } from 'astro:transitions'
+
+import Navbar from '@/components/Navbar.astro'
+import Aside from '@/components/Aside.astro'
+
+const { title = 'tutor4dev' } = Astro.props
+---
+
+<html lang="en">
+  <head>
+    <ClientRouter />
+    
+    <title>tutor4dev | {title}</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/1.0.4/css/bulma.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Science+Gothic:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <slot name="seo"/>
+  </head>
+  <body>
+    <Navbar title={title} />
+    
+    <section class="section">
+      <div class="container">
+        <div class="columns is-variable is-8">
+          <div class="column is-10">
+            <slot />
+          </div>
+
+          <div class="column is-2">
+            <Aside />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <slot name="footer" />
+  </body>
+</html>
+
+<style is:global>
+:root {
+  --font-sans: "IBM Plex Sans Thai",sans-serif;
+  --font-serif: "Science Gothic",serif;
+  --font-mono: "JetBrains Mono",monospace;
+}
+
+body {
+  font-family: var(--font-sans);
+}
+
+code, pre {
+  font-family: var(--font-mono);
+}
+
+.content-blog h1.title,
+.content-page h1.title {
+  font-size: 2.5rem;
+}
+
+.content-blog h2.title,
+.content-page h2.title {
+  font-size: 2.25rem;
+}
+
+.content-blog h3.title,
+.content-page h3.title {
+  font-size: 2rem;
+}
+
+.content-blog h4.title,
+.content-page h4.title {
+  font-size: 1.75rem;
+}
+
+.content-blog h5.title,
+.content-page h5.title {
+  font-size: 1.5rem;
+}
+
+.content-blog figure {
+  margin: 15px 0;
+}
+
+.content-blog blockquote {
+  margin: 10px 0;
+}
+
+.content-blog em {
+  padding: 0 8px;
+  border-radius: 0.5rem;
+  font-size: 0.9rem;
+  background-color: lightgrey;
+}
+
+.content-blog p:has(> em) {
+  margin: 10px 0;
+}
+
+h1:first-of-type {
+  margin-top: 30px;
+}
+
+pre {
+  margin: 10px 10px;
+}
+
+.content-page h1:not(:first-child),
+.content-page h2:not(:first-child),
+.content-page h3:not(:first-child),
+.content-page h4:not(:first-child),
+.content-blog h1:not(:first-child),
+.content-blog h2:not(:first-child),
+.content-blog h3:not(:first-child),
+.content-blog h4:not(:first-child) {
+  margin-top: 15px;
+}
+
+.content-page ul,
+.content-blog ul {
+  list-style: square;
+  margin-block-start: 1rem;
+  margin-block-end: 1rem;
+  padding-inline-start: 40px;
+}
+
+.content-page ol,
+.content-blog ol {
+  list-style: decimal;
+  margin-block-start: 1rem;
+  margin-block-end: 1rem;
+  padding-inline-start: 40px;
+}
+
+.content-page li,
+.content-blog li {}
+</style>

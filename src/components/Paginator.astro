@@ -1,0 +1,22 @@
+---
+const { pages, currentPage } = Astro.props
+---
+
+{ pages.length >= 2 && <nav class="pagination is-rounded" role="navigation" aria-label="pagination">
+  <ul class="pagination-list">
+    { pages.map((each) => {
+      const isCurrent = each === currentPage
+
+      return <li>
+        <a
+          href={`/blogs/pages/${each}`}
+          class={`pagination-link${isCurrent ? ' is-current' : ''}`}
+          aria-label={`Page ${each}`}
+          {...(isCurrent ? { 'aria-current': 'page' } : {})}
+          >
+          {each}
+        </a>
+      </li>
+    }) }
+  </ul>
+</nav> }

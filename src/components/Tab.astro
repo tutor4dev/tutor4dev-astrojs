@@ -1,0 +1,22 @@
+---
+const tabs = {
+  '/': 'หน้าแรก',
+  '/blogs/tags': 'บทความ',
+  '/courses': 'คอร์สอบรม',
+  '/about': 'เกี่ยวกับ'
+}
+---
+
+<div class="tabs">
+  <ul>
+    {
+      Object.keys(tabs).map(k => {
+        if (Astro.url.pathname === k) {
+          return <li class="is-active"><a href={k}>{tabs[k]}</a></li>
+        } else {
+          return <li><a href={k}>{tabs[k]}</a></li>
+        }
+      })
+    }
+  </ul>
+</div>

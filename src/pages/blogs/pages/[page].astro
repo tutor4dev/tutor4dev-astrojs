@@ -1,0 +1,27 @@
+---
+import Layout from '@/components/Layout.astro'
+import BlogCard from '@/components/BlogCard.astro'
+import Paginator from '@/components/Paginator.astro'
+import { paginateBlogs } from '@/lib/content-collection.mjs'
+
+export async function getStaticPaths() {
+  return Object.keys(paginateBlogs).map((each) => {
+    return {
+      params: { page: each }
+    }
+  })
+}
+
+const { page } = Astro.params
+const blogs = paginateBlogs[page]
+const pages = Object.keys(paginateBlogs)
+---
+
+<Layout>
+  <h1 class="title is-1">บทความ</h1>
+  <Paginator {pages} currentPage={page} />
+  {
+    blogs.map(({ id, data: frontMatter }, idx) => <BlogCard {idx} {id} {...frontMatter} />)
+  }
+  <Paginator {pages} currentPage={page} />
+</Layout>

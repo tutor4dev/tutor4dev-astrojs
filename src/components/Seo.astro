@@ -1,0 +1,26 @@
+---
+const { title, date = new Date(), tags=[], image, seo } = Astro.props
+---
+
+<meta name="description" content={seo} />
+<meta name="author" content="tutor4dev" />
+<meta name="keywords" content={tags.join(', ')} />
+<meta name="robots" content="index, follow" />
+
+<meta property="og:title" content={title} />
+<meta property="og:description" content={seo} />
+<meta property="og:image" content={`${Astro.url.origin}/images/facebooks/${image}`} />
+<meta property="og:site_name" content="tutor4dev.com" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content={Astro.url} />
+<meta property="og:locale" content="th_TH" />
+<meta property="article:published_time" content={date.toISOString()} />
+<meta property="article:author" content="tutor4dev" />
+{
+  tags.map((e) => <meta property="article:tag" content={e} />)
+}
+
+<meta name="twitter:title" content={title} />
+<meta name="twitter:description" content={seo} />
+<meta name="twitter:image" content={`${Astro.url.origin}/images/facebooks/${image}`} />
+<meta name="twitter:card" content="summary_large_image" />

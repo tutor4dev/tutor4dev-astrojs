@@ -1,0 +1,65 @@
+---
+import { getEntry, render } from 'astro:content'
+import { blogs } from '@/lib/content-collection.mjs'
+
+import Layout from '@/components/Layout.astro'
+import Seo from '@/components/Seo.astro'
+
+export async function getStaticPaths() {
+  return blogs.map(({ id }) => ({
+    params: { id }
+  }))
+}
+
+const { id } = Astro.params
+const blog = await getEntry('blogCollection', id)
+const { data: frontMatter } = blog
+
+if (!blog) {
+  return new Response(null, {
+    status: 404,
+    statusText: 'Not Found',
+  })
+}
+
+const { Content } = await render(blog)
+---
+
+<Layout title={frontMatter.title}>
+  <Seo slot="seo" {...frontMatter} />
+
+  <div class="content-blog">
+    <Content />
+  </div>
+</Layout>
+
+<style is:global>
+.content-blog .is-1 {
+  text-decoration: underline;
+}
+
+.content-blog .is-3,
+.content-blog .is-4,
+.content-blog .is-5,
+.content-blog .is-6 {
+  color: #606060;
+}
+
+.content-blog em {
+  color: #fa0637;
+  background-color: #f9f9f9;
+}
+
+.content-blog pre {
+  margin: 10px 0;
+  border-radius: 0.5rem;
+}
+
+.content-blog blockquote {
+  background: #f9f9f9;
+  border-left: 5px solid #51a2ff;
+  margin: 1.5em 0;
+  padding: 0.5em 10px;
+  font-style: italic;
+}
+</style>

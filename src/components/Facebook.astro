@@ -1,0 +1,37 @@
+---
+
+---
+
+<div
+  class="fb-page"
+  data-href="https://facebook.com/tutor4dev"
+  data-adapt-container-width="true"
+  data-tabs="timeline,messages"
+  data-height="70"
+  data-hide-cover="false"
+  data-show-facepile="true"
+  >
+  <blockquote cite="https://facebook.com/tutor4dev" class="fb-xfbml-parse-ignore">
+    <a href="https://facebook.com/tutor4dev"></a>
+  </blockquote>
+</div>
+
+<script>
+function initFacebook() {
+  if (!window.FB) {
+    const script = document.createElement('script');
+    script.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v16.0';
+    script.async = true;
+    script.onload = () => {
+      window.FB.XFBML.parse();
+    };
+    document.body.appendChild(script);
+  } else {
+    window.FB.XFBML.parse();
+  }
+}
+
+initFacebook()
+
+document.addEventListener('astro:after-swap', initFacebook)
+</script>

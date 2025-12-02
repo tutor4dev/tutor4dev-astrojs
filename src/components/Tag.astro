@@ -1,0 +1,30 @@
+---
+
+---
+
+<div class="container custom-container mt-3">
+  <span class="label-text">บทความ</span>
+  <div class="scroll-container">
+    {
+      new Array(10).fill(0).map(each => <span class="tag is-info">info</span>)
+    }
+  </div>
+</div>
+
+<style>
+.custom-container {
+  margin-left: 1rem;
+  padding-left: 1rem;
+}
+
+.scroll-container {
+  overflow-x: auto;
+  white-space: nowrap;
+  padding: 0.5rem 0;
+}
+
+.scroll-container .tag {
+  margin-right: 0.5rem;
+  display: inline-block;
+}
+</style>

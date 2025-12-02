@@ -1,0 +1,14 @@
+---
+import Layout from '@/components/Layout.astro'
+import { courses } from '@/lib/content-collection.mjs'
+---
+
+<Layout>
+  {
+    courses.map(({ id, data }) => {
+      return <p>
+        <a href={`/courses/${id}`}>{data.title}</a>
+      </p>
+    })
+  }
+</Layout>
