@@ -1,6 +1,7 @@
 ---
 import { ClientRouter } from 'astro:transitions'
 
+import GoogleAnalytic from '@/components/GoogleAnalytic.astro'
 import Navbar from '@/components/Navbar.astro'
 import Aside from '@/components/Aside.astro'
 
@@ -21,9 +22,11 @@ const { title = 'tutor4dev' } = Astro.props
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
+    <GoogleAnalytic />
     <slot name="seo"/>
   </head>
   <body>
+    import.meta.env.PROD && <script is:inline src="/cookieconsent-config.js"></script>
     <Navbar title={title} />
     
     <section class="section">
