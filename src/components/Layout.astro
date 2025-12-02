@@ -26,7 +26,10 @@ const { title = 'tutor4dev' } = Astro.props
     <slot name="seo"/>
   </head>
   <body>
-    import.meta.env.PROD && <script is:inline src="/cookieconsent-config.js"></script>
+    {
+      import.meta.env.PROD && <script is:inline src="/cookieconsent-config.js"></script>
+    }
+
     <Navbar title={title} />
     
     <section class="section">

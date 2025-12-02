@@ -5,7 +5,7 @@ const { title } = Astro.props
 <div id="navbarContainer">
   <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
     <div class="navbar-brand">
-      <a class="navbar-item" href="https://tutor4dev.com">
+      <a class="navbar-item" href={Astro.url.origin}>
         <img src="/images/brand.png" alt={title}>
       </a>
 

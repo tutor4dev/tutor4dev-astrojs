@@ -1,5 +1,6 @@
 ---
 import Layout from '@/components/Layout.astro'
+import Seo from '@/components/Seo.astro'
 import Footer from '@/components/Footer.astro'
 import BlogCard from '@/components/BlogCard.astro'
 import Paginator from '@/components/Paginator.astro'
@@ -11,6 +12,8 @@ const pages = Object.keys(paginateBlogs)
 
 <Layout title="Home">
   <h1 class="title is-1"></h1>
+
+  <Seo slot="seo" />
 
   <div class="columns is-multiline">
     {
