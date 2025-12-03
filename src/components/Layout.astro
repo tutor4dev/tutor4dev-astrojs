@@ -5,24 +5,26 @@ import GoogleAnalytic from '@/components/GoogleAnalytic.astro'
 import Navbar from '@/components/Navbar.astro'
 import Aside from '@/components/Aside.astro'
 
-const { title = 'tutor4dev' } = Astro.props
+const { title = 'บทความ คลิปสอน รับพัฒนาแอพลิเคชั่น' } = Astro.props
 ---
 
-<html lang="en">
+<html lang="th">
   <head>
     <ClientRouter />
     
-    <title>tutor4dev | {title}</title>
+    <title>tutor4dev.com | {title}</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/1.0.4/css/bulma.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Science+Gothic:wght@100..900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
-    <meta charset="utf-8" />
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
+
     <GoogleAnalytic />
+
     <slot name="seo"/>
   </head>
   <body>

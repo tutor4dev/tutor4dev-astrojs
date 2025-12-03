@@ -1,13 +1,15 @@
 ---
-const { title='บทความ คลิปสอน รับพัฒนาแอพลิเคชั่น', date = new Date(), tags=[], seo='บทความ คลิปสอน รับพัฒนาแอพลิเคชั่น', image='_default.png' } = Astro.props
+const { title, date = new Date(), tags=[], seo, image='_default.png' } = Astro.props
 ---
 
-<meta name="description" content={seo} />
+<meta name="robots" content="index, follow">
+
+<meta name="description" content={`tutor4dev.com [${title}] ${seo}`} />
 <meta name="author" content="tutor4dev" />
 <meta name="keywords" content={tags.join(', ')} />
 <meta name="robots" content="index, follow" />
 
-<meta property="og:title" content={title} />
+<meta property="og:title" content={`tutor4dev.com | ${title}`} />
 <meta property="og:description" content={seo} />
 <meta property="og:image" content={`${Astro.url.origin}/images/facebooks/${image}`} />
 <meta property="og:site_name" content="tutor4dev.com" />
@@ -20,7 +22,7 @@ const { title='บทความ คลิปสอน รับพัฒนา
   tags.map((e) => <meta property="article:tag" content={e} />)
 }
 
-<meta name="twitter:title" content={title} />
+<meta name="twitter:title" content={`tutor4dev.com | ${title}`} />
 <meta name="twitter:description" content={seo} />
 <meta name="twitter:image" content={`${Astro.url.origin}/images/facebooks/${image}`} />
 <meta name="twitter:card" content="summary_large_image" />

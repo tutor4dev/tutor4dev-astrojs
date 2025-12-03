@@ -8,12 +8,17 @@ import { paginateBlogs } from '@/lib/content-collection.mjs'
 
 const blogs = paginateBlogs['1']
 const pages = Object.keys(paginateBlogs)
+
+const seo = {
+  title: 'Home',
+  seo: 'บทความ คลิปสอน รับพัฒนาแอพลิเคชั่น'
+}
 ---
 
 <Layout title="Home">
   <h1 class="title is-1"></h1>
 
-  <Seo slot="seo" />
+  <Seo slot="seo" {...seo} />
 
   <div class="columns is-multiline">
     {
