@@ -58,5 +58,3 @@ seo: การจัดอบรมแบบคอร์สอบรม
 ![img](/images/galleries/226.jpg)
 
 ![img](/images/galleries/227.jpg)
-
-![img](/images/galleries/228.jpg)
