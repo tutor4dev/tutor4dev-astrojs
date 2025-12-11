@@ -11,6 +11,6 @@
   "dependencies": {
     "@astrojs/partytown": "^2.1.4",
     "@astrojs/sitemap": "^3.6.0",
-    "astro": "^5.13.9"
+    "astro": "^5.16.5"
   }
 }

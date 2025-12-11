@@ -6,7 +6,8 @@
     },
     "module": "esnext",
     "moduleResolution": "node",
-    "jsx": "react-jsx"
+    "jsx": "react-jsx",
+    "types": ["astro/client"]
   },
   "include": ["src"],
   "exclude": []
