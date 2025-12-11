@@ -7,6 +7,8 @@ export const pages = await getCollection('pageCollection')
 export const services = await getCollection('serviceCollection')
 export const courses = await getCollection('courseCollection')
 
+blogs.sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf())
+
 export const tags = Array.from(new Set(
   blogs.flatMap(({ data }) => {
     return data.tags
