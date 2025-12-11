@@ -1,8 +1,5 @@
-{ import.meta.env.PROD && <>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@3.0.1/dist/cookieconsent.css" />
-  
+{ import.meta.env.PROD && (<>
   <script is:inline type="text/partytown" src="https://www.googletagmanager.com/gtag/js?id=G-D621WCW99W"></script>
-
   <script is:inline type="text/partytown">
     window.dataLayer = window.dataLayer || [];
     function gtag() {
@@ -10,24 +7,6 @@
     }
     gtag('js', new Date());
 
-    gtag('consent', 'default', {
-      ad_storage: 'denied',
-      ad_user_data: 'denied',
-      ad_personalization: 'denied',
-      analytics_storage: 'denied',
-    });
-
-    gtag('config', 'G-D621WCW99W');
+    gtag('config', 'G-D621WCW99W', { anonymize_ip: true });
   </script>
-
-  <script is:inline data-category="analytics">
-    function updateConsents() {
-      gtag('consent', 'update', {
-        ad_storage: 'granted',
-        ad_user_data: 'granted',
-        ad_personalization: 'granted',
-        analytics_storage: 'granted',
-      });
-    }
-  </script>
-</> }
+</>) }
