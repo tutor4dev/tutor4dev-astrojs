@@ -1,7 +1,3 @@
----
-
----
-
 <div
   class="fb-page"
   data-href="https://facebook.com/tutor4dev"
@@ -16,7 +12,7 @@
   </blockquote>
 </div>
 
-<script>
+<script is:inline>
 function initFacebook() {
   if (!window.FB) {
     const script = document.createElement('script');
@@ -31,7 +27,7 @@ function initFacebook() {
   }
 }
 
-initFacebook()
+initFacebook();
 
 document.addEventListener('astro:after-swap', initFacebook)
 </script>
