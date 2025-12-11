@@ -2,7 +2,8 @@ const dateOptions = {
   day: 'numeric',
   weekday: 'short',
   month: 'short',
-  year: 'numeric'
+  year: 'numeric',
+  timeZone: 'Asia/Bangkok'
 }
 
 const dateTimeOptions = {
@@ -11,7 +12,8 @@ const dateTimeOptions = {
   year: 'numeric',
   hour: '2-digit',
   minute: '2-digit',
-  hour12: false
+  hour12: false,
+  timeZone: 'Asia/Bangkok'
 }
 
 export const d = (new Date()).toLocaleString('th-TH', dateTimeOptions)
