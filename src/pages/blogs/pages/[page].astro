@@ -19,9 +19,16 @@ const pages = Object.keys(paginateBlogs)
 
 <Layout>
   <h1 class="title is-1">บทความ</h1>
+
   <Paginator {pages} currentPage={page} />
+
+  <div class="columns is-multiline">
+    {
+      blogs.map(({ id, data: frontMatter }, idx) => <BlogCard {idx} {id} {...frontMatter} />)
+    }
+  </div>
+
   {
-    blogs.map(({ id, data: frontMatter }, idx) => <BlogCard {idx} {id} {...frontMatter} />)
+    blogs.length>3 && <Paginator {pages} currentPage={page} />
   }
-  <Paginator {pages} currentPage={page} />
 </Layout>
