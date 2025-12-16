@@ -1,12 +1,12 @@
 ---
 import { getEntry, render } from 'astro:content'
-import { pages } from '@/lib/content-collection.mjs'
+import { activePages } from '@/lib/content-collection.mjs'
 
 import Layout from '@/components/Layout.astro'
 import Seo from '@/components/Seo.astro'
 
 export async function getStaticPaths() {
-  return pages.map(({ id }) => ({
+  return activePages.map(({ id }) => ({
     params: { page: id }
   }))
 }

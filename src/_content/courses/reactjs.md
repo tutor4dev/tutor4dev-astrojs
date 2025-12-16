@@ -1,6 +1,7 @@
 ---
 title: React.js Fundamental
 seo: เรียนรู้แนวคิดหลักของ React ตั้งแต่พื้นฐานจนถึงระดับกลาง-สูง ครอบคลุม useState, useEffect, useReducer, การจัดการ State, การใช้ Context, การสร้าง Custom Hook, การ Optimize Performance ด้วย Memoization และแนวทางการออกแบบโครงสร้างโปรเจกต์ React อย่างมีประสิทธิภาพ
+active: true
 ---
 
 # React.js Fundamental

@@ -1,6 +1,7 @@
 ---
 title: IoT and MicroPython Fundamental
 seo: เรียนรู้พื้นฐานอิเล็กทรอนิกส์และ IoT ด้วย ESP32 และ MicroPython ตั้งแต่แนวคิดไฟฟ้าพื้นฐาน, การใช้งานเซนเซอร์, การสื่อสารผ่าน Wi-Fi และ MQTT, ไปจนถึงการใช้งาน Node-RED และ Computer Vision ด้วย OpenCV และ YOLO พร้อมเวิร์กช็อปลงมือทำจริง
+active: true
 ---
 
 # IoT and MicroPython Fundamental

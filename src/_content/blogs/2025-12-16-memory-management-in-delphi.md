@@ -5,6 +5,7 @@ tags: ['delphi']
 intro: บทความนี้จะพาคุณทำความเข้าใจการจัดการ Memory Management ใน Delphi Win32 และ Win64 Application ตั้งแต่แนวคิดพื้นฐาน ไปจนถึงการใช้งาน try...finally อย่างถูกต้อง พร้อมตัวอย่างการใช้ที่ผิดพลาด และการใช้งาน try...finally ร่วมกับ try...except เพื่อเขียนโค้ดที่ปลอดภัย อ่านง่าย และดูแลรักษาได้ในระยะยาว
 seo: เรียนรู้ Memory Management ใน Delphi การใช้ try...finally อย่างถูกต้อง พร้อมตัวอย่างการใช้ที่ผิดพลาด และการใช้งาน try...finally ร่วมกับ try...except เพื่อเขียนโค้ด Delphi ที่ปลอดภัยและไม่มี Memory Leak
 image: 2025-12-16-memory-management-in-delphi.png
+active: true
 ---
 
 # Memory การจัดการ Memory Management in Delphi

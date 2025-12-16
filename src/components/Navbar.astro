@@ -1,5 +1,5 @@
 ---
-import { tags, courses, services } from '@/lib/content-collection.mjs'
+import { tags, activeCourses } from '@/lib/content-collection.mjs'
 const { title } = Astro.props
 ---
 <div id="navbarContainer">
@@ -61,7 +61,7 @@ const { title } = Astro.props
           <a class="navbar-link">หลักสูตร</a>
           <div class="navbar-dropdown">
             {
-              courses.map(({id, data}) => <a class="navbar-item" href={`/courses/${id}`}>{data.title}</a>)
+              activeCourses.map(({id, data}) => <a class="navbar-item" href={`/courses/${id}`}>{data.title}</a>)
             }
           </div>
         </div>
@@ -72,7 +72,7 @@ const { title } = Astro.props
           <a class="navbar-link">บริการของเรา</a>
           <div class="navbar-dropdown">
             {
-              services.map(({id, data}) => <a class="navbar-item" href={`/${id}`}>{data.title}</a>)
+              activeServices.map(({id, data}) => <a class="navbar-item" href={`/${id}`}>{data.title}</a>)
             }
           </div>
         </div>

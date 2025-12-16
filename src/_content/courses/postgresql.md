@@ -1,6 +1,7 @@
 ---
 title: SQL and PostgreSQL Fundamental
 seo: เรียนรู้พื้นฐานฐานข้อมูลเชิงสัมพันธ์และ PostgreSQL อย่างเป็นระบบ ตั้งแต่โครงสร้างของตาราง, การใช้ SQL พื้นฐาน (SELECT, INSERT, JOIN), การจัดการข้อมูล, ฟังก์ชันใน PostgreSQL, ไปจนถึงการใช้งาน Data Types พิเศษ, Index, Views และ Window Functions เหมาะสำหรับผู้เริ่มต้นที่ต้องการเข้าใจและใช้งานฐานข้อมูลได้จริง
+active: true
 ---
 
 # SQL and PostgreSQL Fundamental

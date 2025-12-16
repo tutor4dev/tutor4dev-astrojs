@@ -5,6 +5,7 @@ tags: ['sveltejs', 'javascript']
 intro: Compiler First in Svelte.js คือแนวคิดที่ทำให้เฟรมเวิร์ก Svelte แตกต่างจาก React และ Vue ด้วยการใช้ตัวคอมไพเลอร์แปลงโค้ดให้ทำงานอย่างมีประสิทธิภาพตั้งแต่ขั้นตอน build ไม่ต้องพึ่ง Virtual DOM เหมือนเฟรมเวิร์กอื่น ส่งผลให้แอปพลิเคชันเบา โหลดเร็ว และจัดการการเปลี่ยนแปลงของ UI ได้ตรงจุดยิ่งขึ้น เหมาะสำหรับผู้เริ่มต้นและผู้ที่ต้องการพัฒนาเว็บที่มีประสิทธิภาพสูง
 seo: ทำความเข้าใจแนวคิด Compiler First ใน Svelte และเปรียบเทียบกับ Virtual DOM ของ React.js และ Vue.js
 image: 2025-11-21-compiler-first-svelte.png
+active: true
 ---
 
 # Svelte.js และแนวคิดแบบ Compiler First

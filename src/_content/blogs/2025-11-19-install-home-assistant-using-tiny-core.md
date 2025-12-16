@@ -5,6 +5,7 @@ tags: ['iot']
 intro: TinyCore Linux คือระบบปฏิบัติการ Linux ที่มีขนาดเล็กอย่างเหลือเชื่อซึ่งมีขนาดเพียง 2x MB เท่านั้น บทความนี้จึงขอใช้ TinyCore Linux ในการติดตั้ง Home Assistant (Home Automation Platform) แทนวิธีการติดตั้งใน Documation ของ Official Site ซึ่งแนะนำให้ใช้ Ubuntu ซึ่งมีขนาดของ Image ถึง 3.x-4.x GB
 seo: TinyCore Linux คือระบบปฏิบัติการ Linux ที่มีขนาดเล็กอย่างเหลือเชื่อซึ่งมีขนาดเพียง 2x MB เท่านั้น บทความนี้จึงขอใช้ TinyCore Linux ในการติดตั้ง Home Assistant (Home Automation Platform) แทนวิธีการติดตั้งใน Documation ของ Official Site ซึ่งแนะนำให้ใช้ Ubuntu ซึ่งมีขนาดของ Image ถึง 3.x-4.x GB
 image: 2025-11-19-install-home-assistant-using-tiny-core.png
+active: true
 ---
 
 

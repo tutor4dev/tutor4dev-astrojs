@@ -5,6 +5,7 @@ tags: ['javascript']
 intro: Token-Oriented Object Notation หรือ (TOON) คือรูปแบบการจัดโครงสร้างข้อมูลแบบ Lightweight Data Notation ที่ถูกออกแบบมาให้มนุษย์อ่านง่ายและประมวลผลได้รวดเร็ว คล้ายกับ JSON แต่ใช้แนวคิด Token ลดความซับซ้อนของสัญลักษณ์และเน้นความกระชับ เหมาะสำหรับงานพัฒนาระบบที่ต้องการความเรียบง่ายและประสิทธิภาพ
 seo: TOON หรือ Token-Oriented Object Notation คือรูปแบบข้อมูลแบบเบา อ่านง่าย และกระชับกว่า JSON เหมาะสำหรับผู้เริ่มต้นและนักพัฒนา พร้อมตัวอย่างการใช้งาน Node.js และคำอธิบายโครงสร้างพื้นฐานอย่างครบถ้วน
 image: 2025-11-22-token-oriented-object-notation-toon.png
+active: true
 ---
 
 # สวัสดี Token-oriented Object Notation

@@ -1,6 +1,7 @@
 ---
 title: OOP in Delphi and Component Writer Fundamental
 seo: เรียนรู้ OOP และการเขียน Component ใน Delphi ครบทุกหัวข้อสำคัญ ไม่ว่าจะเป็น Class, Object, Inheritance, Polymorphism, Generic, การสร้างและจัดการ Class ใน Delphi, รวมถึงเทคนิคการสร้าง Custom Component ใช้งานจริง พร้อม Workshop ที่ช่วยให้คุณเข้าใจและลงมือทำได้ทันที
+active: true
 ---
 
 # OOP in Delphi and Component Writer Fundamental

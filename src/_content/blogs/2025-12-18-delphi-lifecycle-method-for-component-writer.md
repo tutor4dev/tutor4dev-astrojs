@@ -5,6 +5,7 @@ tags: ['delphi']
 intro: บทความนี้จะพาคุณไปรู้จัก Lifecycle Method ที่ Delphi Component Writer ควรรู้ เช่น Create, Free, Loaded, Notification พร้อมอธิบายวัตถุประสงค์และตัวอย่างการใช้งานจริง เพื่อให้ผู้อ่านสามารถสร้าง Component ที่เสถียร ปลอดภัย และพร้อมในใช้งานทั้งในสถานะการ Design-Time และ Runtime
 seo: Lifecycle Method ที่สำคัญสำหรับ Delphi Component Writer เช่น Create, Free, Loaded, Notification พร้อมตัวอย่างการใช้งานจริงและแนวคิด Lifecycle ของ Component เพื่อรองรับการใช้งาน ทั้ง Design-Time และ Runtime
 image: 2025-12-18-delphi-lifecycle-method-for-component-writer.png
+active: true
 ---
 
 # Lifecycle Method ที่สำคัญสำหรับ Delphi Component Writer

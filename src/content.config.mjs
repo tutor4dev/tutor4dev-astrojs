@@ -12,6 +12,7 @@ const blogCollection = defineCollection({
     seo: z.string(),
     image: z.string().optional(),
     relateBlogs: z.array(reference('blog')).optional(),
+    active: z.boolean(),
   }),
 })
 
@@ -20,6 +21,7 @@ const courseCollection = defineCollection({
   schema: z.object({
     title: z.string(),
     seo: z.string(),
+    active: z.boolean(),
   })
 })
 
@@ -28,6 +30,7 @@ const pageCollection = defineCollection({
   schema: z.object({
     title: z.string(),
     seo: z.string(),
+    active: z.boolean(),
   })
 })
 

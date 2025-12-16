@@ -5,6 +5,7 @@ tags: ['delphi']
 intro: Delphi ยังคงเป็นหนึ่งในเครื่องมือที่แข็งแกร่งสำหรับการพัฒนาแอปพลิเคชัน ด้วย Paradigm แบบ OOP (Object-Oriented Programming) โดยเฉพาะเมื่อทำงานกับ Component หรือที่นักพัฒนา Delphi มักเรียกว่า VCL (Visual Component Library) บทความนี้จะพาคุณทำความเข้าใจแนวคิด OOP ที่จำเป็น และคำศัพท์ที่ Component Writer ควรรู้
 seo: อธิบายแนวคิด OOP และศัพท์เทคนิคที่จำเป็นสำหรับ Delphi Component Writer เข้าใจการพัฒนา VCL อย่างเป็นระบบ เหมาะสำหรับนักพัฒนา Delphi ทุกระดับ
 image: 2025-12-17-oop-concept-for-delphi-component-writer.png
+active: true
 ---
 
 # OOP Concept และ ศัพท์เทคนิคสำหรับ Delphi Component Writer
