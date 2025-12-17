@@ -54,6 +54,15 @@ const { title = 'บทความ คลิปสอน รับพัฒน�
   --font-mono: "JetBrains Mono",monospace;
 }
 
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation: none;
+}
+
+::view-transition-group(root) {
+  animation: none;
+}
+
 body {
   font-family: var(--font-sans);
 }
