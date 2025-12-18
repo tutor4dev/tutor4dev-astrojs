@@ -211,7 +211,7 @@ end;
 
 ## สรุป
 
-Delphi 12 ยังคงโดดเด่นด้าน OOP และ Component-Based Development หากเราต้องการเป็น **Component Writer** ที่ดีจึงควรที่จะ
+Delphi ยังคงโดดเด่นด้าน OOP และ Component-Based Development หากเราต้องการเป็น **Component Writer** ที่ดีจึงควรที่จะ
 
 - เข้าใจ OOP อย่างลึกซึ้ง
 - รู้โครงสร้างคลาสของ Delphi
